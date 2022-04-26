@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "../sass/style.sass",
+    "style.css"
+  ],
+  "names": [],
+  "mappings": "AAGA;;;EAGE,YAAA;EACA,WAAA;EACA,WAAA;EACA,sBAAA;ACFF",
+  "file": "style.css"
+}
