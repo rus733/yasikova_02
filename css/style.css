@@ -6,9 +6,8 @@
   border: 0px;
   box-sizing: border-box;
 }
-* img,
-*::before img,
-*::after img {
+
+img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -19,6 +18,10 @@ body,
 html {
   overflow-x: hidden;
   font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 .container {
@@ -41,6 +44,34 @@ button {
   cursor: pointer;
 }
 
+button {
+  border: 2px solid #CAE9EB;
+  background: transparent;
+  border-radius: 10px;
+  padding: 20px 23px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 800px;
+  }
+}
+.header {
+  height: 765px;
+  overflow: hidden;
+  position: relative;
+}
 .header__navbar {
   position: absolute;
   top: 0;
@@ -58,6 +89,9 @@ button {
 }
 .header__background-image {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header__hero {
   padding-top: 383px;
@@ -73,7 +107,6 @@ button {
 }
 .header-hero__title {
   width: 1155px;
-  margin-top: 0;
   margin-bottom: 25px;
   font-family: "Ruda";
   font-weight: 900;
@@ -91,18 +124,6 @@ button {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-}
-.header-hero__button {
-  border: 2px solid #CAE9EB;
-  background: transparent;
-  border-radius: 10px;
-  padding: 20px 23px;
-  font-family: "Rubik";
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
 }
 .header-hero__link {
   color: #CAE9EB;
@@ -162,4 +183,43 @@ button {
 }
 .menu__icon {
   display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header__hero {
+    padding-top: 300px;
+  }
+  .header-hero__title {
+    width: 800px;
+    font-size: 45px;
+    line-height: 1.15;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .header-hero__text {
+    width: 688px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .header-hero__descr {
+    font-family: "Rubik";
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+.bio-picture {
+  position: relative;
+  width: 383px;
+  height: 550px;
+  z-index: 10;
+  width: 1762px;
+}
+.bio__background {
+  width: 100%;
+}
+.bio__background-img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(235, 111, 255, 0.25) 0%, rgba(202, 233, 235, 0.25) 100%);
 }/*# sourceMappingURL=style.css.map */
