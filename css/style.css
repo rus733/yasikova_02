@@ -16,7 +16,7 @@ img {
 
 body,
 html {
-  overflow-x: hidden;
+  overflow: auto;
   font-family: "Rubik", sans-serif;
   font-family: "Ruda", sans-serif;
 }
